@@ -6,6 +6,7 @@
 <li class="has-line-data" data-line-start="8" data-line-end="9">Dynamic and colorful graphics.</li>
 <li class="has-line-data" data-line-start="9" data-line-end="10">Engaging gameplay that tests your reflexes.</li>
 </ul>
+<div align="center"> <img src="https://lh3.googleusercontent.com/pw/ADCreHewLHPPZ5gT16xx2R1O5ymwf7KBtu75Gd35aaxbZYUZyjqtDVPpQ1aoyqpmFxxKn5b0CfmeecibrjpBlqEkibWJuPICN78pRF5QCq6LZGtNYRSh7mSL3jxZeBYn7DCxEzJS2_5UIWEB004uD9WXp5ZJegpNCZs4jSyjsDlus6RPFGl0fAdmLV_aHDSzn2JGIry8pZR-0bY9H0lQ9C6fcm2OfOdz9LLjDpLSuAV0XvfwMKUV2bkOyvWD9HP13r1w_0R3FvxpPpKqg-2D7N4AnF_EbOwHni0V9J830gWH15dFQ8BNu7JFJpwNVvtwb1tegL8hu-JZId6CHbf8NkR-QFj5Jh5mfHKDetvpXhtDGeWpijjLZUC3mfHnk4xIOTACUlcBTwYD1LMqXlMqD-wA_5Sq1LINldM0--D1MvK0O4Fb-br9sDihdvgdq5snD0nzW6_hSc1yXmyLJLCtmrAFuEvBQqT8WurwwmLZowvZclGaBeAsGKvIiWHr9ymCbw2BvZijuKM0oz-zOn3xLYhU00S_knOmEf5o9p_W-gzgK7gdJdqAAhgiY2Ujl5AemFH3jAXVHpM-ptODhYmRNcN2Z-hOdnSUm38i0t8dmoEM0IBi2SdhoxymxF46KT7ej2fDaopY3tArlqMEGUXZMMpQB8ijeggC1Gr5S1y6nQ3UUvW_o14urjbyXQfEz6SF2XKGXTEDFglwedOZkfHLy_496O4dRXfMeltL_PzoEju__rTGNAfLkthKOaibAJXX7r8lwmVOI-ONhmraJ2BlO8jKNwGihs6ukvPw9oJmblx9lCqUJu96m-Gek4m5WyebrxD4vPI7Yc9xbjLydk5QgdO5BhNPWofvDJ3EQg4GLfhj26A7CR7gHW6EtR_e6Kl-Y1w2d9VmxHNAKId84G_aZKW8Pg=w774-h607-s-no-gm?authuser=0"> </div>
 <h2 class="code-line" data-line-start=14 data-line-end=15 ><a id="Installation_14"></a>Installation</h2>
 <p class="has-line-data" data-line-start="16" data-line-end="19">Dillinger requires<br>
 Python 3.x<br>
