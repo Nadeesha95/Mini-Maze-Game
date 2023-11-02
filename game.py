@@ -14,7 +14,14 @@ FPS = 60
 WHITE = (255, 255, 255)
 collision_sound = pygame.mixer.Sound("audio/crash-6711.mp3")
 level_sound = pygame.mixer.Sound("audio/level.mp3")
+pygame.mixer.music.load("audio/bg.mp3")
+pygame.mixer.music.play(-1)
 won_sound = pygame.mixer.Sound("audio/won.mp3")
+bg_image = pygame.image.load("img/bg.png")
+
+
+
+bg_image = pygame.transform.scale(bg_image, (WIDTH, HEIGHT))
 
 # Initialize the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -48,7 +55,7 @@ current_level = 0
 
 def generate_lines():
     return [
-        (random.randint(50, WIDTH), line_speed, random.randint(7, 15), (0, 0, 0))
+        (random.randint(50, WIDTH), line_speed, random.randint(7, 15), (255, 255, 255))  # Change the color to white
         for _ in range(line_count)
     ]
 
@@ -113,7 +120,7 @@ while running:
         lines.extend(additional_lines)
         line_speed += 1  # Increase line speed after winning level 2
     else:
-        screen.fill(WHITE)
+        screen.blit(bg_image, (0, 0))
 
     for y, row in enumerate(grid):
         for x, cell in enumerate(row):
@@ -129,9 +136,11 @@ while running:
 
     if player_rect.colliderect(pygame.Rect(end[0] * CELL_SIZE, end[1] * CELL_SIZE, CELL_SIZE, CELL_SIZE)):
         won = True
+       
         level_sound.play()
         current_level += 1  # Increase the level
         if current_level >= 2:
+            pygame.mixer.music.pause()
             won_sound.play()
            
             random_color = (randint(0, 255), randint(0, 255), randint(0, 255))
@@ -149,10 +158,11 @@ while running:
             screen.blit(text2, text_rect2)
             pygame.display.flip()
             pygame.time.delay(2000)
+            pygame.mixer.music.unpause()
             current_level = 0 
             line_speed = 2  
         else:
-            text = font.render(f"Level: {current_level}", True, (0, 0, 0))
+            text = font.render(f"Level: {current_level}", True, (255, 255, 255))
             text_rect = text.get_rect(topleft=(10, 10))
             screen.blit(text, text_rect)
             pygame.display.flip()
